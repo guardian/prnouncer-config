@@ -7,8 +7,68 @@ on:
     - cron: "0 9 * * MON-FRI"
 
 jobs:
+  # See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-defining-outputs-for-a-job
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      repos: ${{ steps.main.outputs.repos }}
+    steps:
+      - id: main
+        # See https://github.com/orgs/guardian/teams/developer-experience/repositories
+        run: |
+          REPOS=(
+            actions-read-private-repos
+            actions-riff-raff
+            amiable
+            amigo
+            anghammarad
+            aws-account-setup
+            aws-cost-management
+            cdk
+            cdk-metadata
+            cdk-playground
+            cfn-private-resource-types
+            cloudformation-information
+            cloudwatch-logs-management
+            deploy-tools-platform
+            devx-config
+            devx-docs
+            devx-logs
+            dns-validation-lambda
+            elastic-search-monitor
+            elasticsearch-node-rotation
+            github-audit
+            github-lens
+            google-chat-bots
+            grafana
+            instance-tag-discovery
+            janus
+            janus-app
+            node-riffraff-artifact
+            prism
+            private-infrastructure-config
+            riff-raff
+            sbt-riffraff-artifact
+            security-hq
+            security-platform
+            service-control-policies
+            ssm-to-env
+            toil
+            toil-records
+            tracker
+          )
+          
+          RESULT=""
+          for repo in "${REPOS[@]}"; do
+            RESULT="$RESULT,guardian/$repo"
+          done
+          
+          # remove leading ,
+          RESULT="${RESULT:1}"
+          echo "::set-output name=repos::$RESULT"
   prnouncer:
     runs-on: ubuntu-latest
+    needs: setup
     steps:
       - uses: guardian/actions-prnouncer@main
         with:
@@ -19,7 +79,7 @@ jobs:
 
           # Defaults to the repository that this action is configured in.
           # You can specify multiple repositories by using a comma delimited string!
-          github-repositories: guardian/cdk,guardian/amigo,guardian/amiable,guardian/prism,guardian/riff-raff,guardian/security-hq
+          github-repositories: ${{ needs.setup.outputs.repos }}
 
           # Comma delimited list of user ID's to ignore when scanning for pull requests. Defaults to Dependabot
           # github-ignored-users: 49699333
