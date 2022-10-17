@@ -16,50 +16,54 @@ jobs:
       - id: main
         # See https://github.com/orgs/guardian/teams/developer-experience/repositories
         run: |
-          REPOS=(
+          # TODO handle these correctly, maybe via https://github.com/guardian/actions-read-private-repos?
+          PRIVATE_REPOS=(
+            aws-account-setup
+            aws-cost-management
+            cdk-metadata
+            cfn-private-resource-types
+            deploy-tools-platform
+            devx-docs
+            dns-validation-lambda
+            github-audit
+            google-chat-bots
+            grafana
+            janus
+            private-infrastructure-config
+            security-platform
+            service-control-policies
+            toil-records
+            tracker
+          )
+        
+          PUBLIC_REPOS=(
             actions-read-private-repos
             actions-riff-raff
             amiable
             amigo
             anghammarad
-            aws-account-setup
-            aws-cost-management
             cdk
-            cdk-metadata
             cdk-playground
-            cfn-private-resource-types
             cloudformation-information
             cloudwatch-logs-management
-            deploy-tools-platform
             devx-config
-            devx-docs
             devx-logs
-            dns-validation-lambda
             elastic-search-monitor
             elasticsearch-node-rotation
-            github-audit
             github-lens
-            google-chat-bots
-            grafana
             instance-tag-discovery
-            janus
             janus-app
             node-riffraff-artifact
             prism
-            private-infrastructure-config
             riff-raff
             sbt-riffraff-artifact
             security-hq
-            security-platform
-            service-control-policies
             ssm-to-env
             toil
-            toil-records
-            tracker
           )
           
           RESULT=""
-          for repo in "${REPOS[@]}"; do
+          for repo in "${PUBLIC_REPOS[@]}"; do
             RESULT="$RESULT,guardian/$repo"
           done
           
