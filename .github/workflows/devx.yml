@@ -69,7 +69,7 @@ jobs:
           
           # remove leading ,
           RESULT="${RESULT:1}"
-          echo "::set-output name=repos::$RESULT"
+          echo "repos=$RESULT" >> $GITHUB_OUTPUT
   prnouncer:
     runs-on: ubuntu-latest
     needs: setup
