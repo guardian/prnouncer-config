@@ -1,0 +1,80 @@
+name: "[Editorial Tools] Google Chats PR Announcer"
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Every morning at 9AM, Mondays to Fridays
+    - cron: "0 9 * * MON-FRI"
+
+jobs:
+  # See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-defining-outputs-for-a-job
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      repos: ${{ steps.main.outputs.repos }}
+    steps:
+      - id: main
+        # See https://github.com/orgs/guardian/teams/developer-experience/repositories
+        run: |
+          REPOS=(
+            atom-workshop
+            crossword
+            editorial-production-metrics
+            editions-card-builder
+            editorial-preferences
+            editorial-tools-integration-tests
+            editorial-tools-platform
+            editorial-tools-production-monitoring
+            editorial-tools-user-telemetry-service
+            editorial-viewer
+            facia-tool
+            flexible-content
+            flexible-feeds
+            flexible-model
+            flexible-octopus-converter
+            flexible-octopus-model
+            flexible-snapshotter
+            grid
+            interactive-basichartool
+            login.gutools
+            media-atom-maker
+            path-manager
+            permissions
+            pinboard
+            presence-indicator
+            prosemirror-elements
+            prosemirror-invisibles
+            prosemirror-typerighter
+            remote-machines
+            rights-feeder
+            story-packages
+            tagmanager
+            ten-four_quiz-builder
+            tools-index
+            typerighter
+            workflow
+            workflow-frontend
+            youtube-pfp-player-demo
+          )
+          
+          RESULT=""
+          for repo in "${REPOS[@]}"; do
+            RESULT="$RESULT,guardian/$repo"
+          done
+          
+          # remove leading ,
+          RESULT="${RESULT:1}"
+          echo "repos=$RESULT" >> $GITHUB_OUTPUT
+  prnouncer:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - uses: guardian/actions-prnouncer@main
+        with:
+          google-webhook-url: ${{ secrets.EDITORIAL_TOOLS_GOOGLE_WEBHOOK_URL }}
+          github-repositories: ${{ needs.setup.outputs.repos }}
+
+          # This is a fine-grained PAT for the guardian-ci user.
+          # It's got PR read permission for all repositories accessible by the user.
+          # See https://github.blog/2022-10-18-introducing-fine-grained-personal-access-tokens-for-github/
+          github-token: ${{ secrets.GU_REPO_READ_ACCESS }}
