@@ -76,3 +76,10 @@ jobs:
           # It's got PR read permission for all repositories accessible by the user.
           # See https://github.blog/2022-10-18-introducing-fine-grained-personal-access-tokens-for-github/
           github-token: ${{ secrets.GU_REPO_READ_ACCESS }}
+          
+          # Ignore PRs from dependabot, and snyk-bot as there are a LOT of PRs.
+          # See:
+          #   - https://api.github.com/users/dependabot
+          #   - https://api.github.com/users/snyk-bot
+          # TODO Address these PRs!
+          github-ignored-users: 49699333,19733683
