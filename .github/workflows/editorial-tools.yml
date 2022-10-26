@@ -47,7 +47,7 @@ jobs:
             prosemirror-typerighter
             remote-machines
             rights-feeder
-            story-packages
+            # story-packages # bot is failing to parse response from this repo
             tagmanager
             ten-four_quiz-builder
             tools-index
