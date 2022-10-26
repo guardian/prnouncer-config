@@ -14,7 +14,6 @@ jobs:
       repos: ${{ steps.main.outputs.repos }}
     steps:
       - id: main
-        # See https://github.com/orgs/guardian/teams/developer-experience/repositories
         run: |
           REPOS=(
             atom-workshop
@@ -34,7 +33,6 @@ jobs:
             flexible-octopus-converter
             flexible-octopus-model
             flexible-snapshotter
-            grid
             interactive-basichartool
             login.gutools
             media-atom-maker
