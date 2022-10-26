@@ -3,8 +3,8 @@ name: "[DevX] Google Chats PR Announcer"
 on:
   workflow_dispatch:
   schedule:
-    # Every morning at 9AM, Mondays to Fridays
-    - cron: "0 9 * * MON-FRI"
+    # Every morning at 7AM, Mondays to Fridays
+    - cron: "0 7 * * MON-FRI"
 
 jobs:
   # See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-defining-outputs-for-a-job
@@ -33,7 +33,7 @@ jobs:
             toil-records
             tracker
           )
-        
+
           PUBLIC_REPOS=(
             actions-read-private-repos
             actions-riff-raff
@@ -59,14 +59,14 @@ jobs:
             ssm-to-env
             toil
           )
-          
+
           REPOS=("${PRIVATE_REPOS[@]}" "${PUBLIC_REPOS[@]}")
-          
+
           RESULT=""
           for repo in "${REPOS[@]}"; do
             RESULT="$RESULT,guardian/$repo"
           done
-          
+
           # remove leading ,
           RESULT="${RESULT:1}"
           echo "repos=$RESULT" >> $GITHUB_OUTPUT
