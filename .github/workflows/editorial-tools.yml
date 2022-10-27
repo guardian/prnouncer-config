@@ -16,26 +16,35 @@ jobs:
       - id: main
         run: |
           REPOS=(
+            atom-maker
             atom-workshop
             crossword
+            crossword-status-checker
+            crossword-uploader
             editorial-production-metrics
             editions-card-builder
             editorial-preferences
-            editorial-tools-integration-tests
+            editorial-production-metrics
+            editorial-production-metrics-lib
             editorial-tools-platform
             editorial-tools-production-monitoring
             editorial-tools-user-telemetry-service
             editorial-viewer
+            facia-scala-client
             facia-tool
             flexible-content
             flexible-feeds
             flexible-model
             flexible-octopus-converter
             flexible-octopus-model
+            flexible-restorer
             flexible-snapshotter
+            gustaf
             interactive-basichartool
             login.gutools
             media-atom-maker
+            pan-domain-authentication
+            panda-hmac
             path-manager
             permissions
             pinboard
@@ -43,10 +52,16 @@ jobs:
             prosemirror-elements
             prosemirror-invisibles
             prosemirror-typerighter
+            rcs-poller-lambda
             remote-machines
             rights-feeder
+            s3-upload
+            screenshort
             # story-packages # bot is failing to parse response from this repo
             tagmanager
+            targeting
+            targeting-client
+            teleporter
             ten-four_quiz-builder
             tools-index
             typerighter
