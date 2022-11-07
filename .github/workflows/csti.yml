@@ -49,4 +49,4 @@ jobs:
           #   - https://api.github.com/users/dependabot
           #   - https://api.github.com/users/renovatebot
           # TODO Address these PRs!
-          github-ignored-users: 49699333,28813369
+          github-ignored-users: 49699333,38656520
