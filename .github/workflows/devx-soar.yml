@@ -78,3 +78,6 @@ jobs:
           # It's got PR read permission for all repositories accessible by the user.
           # See https://github.blog/2022-10-18-introducing-fine-grained-personal-access-tokens-for-github/
           github-token: ${{ secrets.GU_REPO_READ_ACCESS }}
+
+          # By default, guardian/actions-prnouncer doesn't report PRs from Dependabot. Include them here.
+          github-ignored-users: ''
