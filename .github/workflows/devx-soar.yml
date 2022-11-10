@@ -51,6 +51,7 @@ jobs:
             security-hq
             security-platform
             service-control-policies
+            ssm-scala
             ssm-to-env
             toil
             toil-records
