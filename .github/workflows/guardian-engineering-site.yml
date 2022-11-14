@@ -1,0 +1,17 @@
+name: "[theguardian.engineering] Google Chats PR Announcer"
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Every morning at 9AM, Mondays, Wednesdays and Fridays
+    - cron: "0 9 * * MON,WED,FRI"
+
+jobs:
+  prnouncer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: guardian/actions-prnouncer@main
+        with:
+          google-webhook-url: ${{ secrets.GUARDIAN_ENGINEERING_SITE_GOOGLE_WEBHOOK_URL }}
+          github-repositories: guardian/guardian-engineering-site
+          github-token: ${{ secrets.GU_REPO_READ_ACCESS }}
