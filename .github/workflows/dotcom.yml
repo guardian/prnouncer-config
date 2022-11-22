@@ -47,3 +47,5 @@ jobs:
           #   - https://api.github.com/users/dependabot
           #   - https://api.github.com/users/snyk-bot
           github-ignored-users: 49699333,19733683
+
+          github-ignored-labels: Stale,prnouncer-ignore
