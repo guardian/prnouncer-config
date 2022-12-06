@@ -51,6 +51,7 @@ jobs:
             security-hq
             security-platform
             service-control-policies
+            snyk-tag-monitor
             ssm-scala
             ssm-to-env
             toil
