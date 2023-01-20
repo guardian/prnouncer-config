@@ -57,6 +57,7 @@ jobs:
             toil
             toil-records
             tracker
+            waf
           )
 
           RESULT=""
