@@ -39,7 +39,6 @@ jobs:
             elasticsearch-node-rotation
             github-audit
             github-lens
-            google-chat-bots
             grafana
             instance-tag-discovery
             janus-app
