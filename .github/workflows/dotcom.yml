@@ -18,6 +18,8 @@ jobs:
           REPOS=(
             frontend
             dotcom-rendering
+            apps-rendering-api-models
+            bridget
           )
           
           RESULT=""
