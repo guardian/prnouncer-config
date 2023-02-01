@@ -38,7 +38,6 @@ jobs:
             elastic-search-monitor
             elasticsearch-node-rotation
             github-audit
-            github-lens
             grafana
             instance-tag-discovery
             janus-app
@@ -49,6 +48,7 @@ jobs:
             sbt-riffraff-artifact
             security-hq
             security-platform
+            service-catalogue
             service-control-policies
             snyk-tag-monitor
             ssm-scala
