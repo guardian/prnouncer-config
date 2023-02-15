@@ -25,7 +25,6 @@ jobs:
             aws-account-setup
             aws-cost-management
             cdk
-            cdk-metadata
             cdk-playground
             cfn-private-resource-types
             cloudformation-information
@@ -49,7 +48,6 @@ jobs:
             security-hq
             security-platform
             service-catalogue
-            service-control-policies
             snyk-tag-monitor
             ssm-scala
             ssm-to-env
