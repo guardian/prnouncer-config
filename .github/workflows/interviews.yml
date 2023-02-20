@@ -13,5 +13,5 @@ jobs:
       - uses: guardian/actions-prnouncer@main
         with:
           google-webhook-url: ${{ secrets.INTERVIEWS_GOOGLE_WEBHOOK_URL }}
-          github-repositories: guardian/coding-exercises,guardian/coding-exercise-project,guardian/interview-questions
+          github-repositories: guardian/coding-exercises,guardian/coding-exercise-project,guardian/interview-questions,guardian/redact-pdf
           github-token: ${{ secrets.GU_REPO_READ_ACCESS }}
