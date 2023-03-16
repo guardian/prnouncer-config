@@ -20,6 +20,7 @@ jobs:
             dotcom-rendering
             apps-rendering-api-models
             bridget
+            about-us
           )
           
           RESULT=""
