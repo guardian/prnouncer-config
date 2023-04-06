@@ -41,6 +41,7 @@ jobs:
             instance-tag-discovery
             janus-app
             node-riffraff-artifact
+            privatebin-docker
             private-infrastructure-config
             prism
             riff-raff
