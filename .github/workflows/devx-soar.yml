@@ -42,6 +42,7 @@ jobs:
             gu-who
             instance-tag-discovery
             janus-app
+            master-to-main
             node-riffraff-artifact
             privatebin-docker
             private-infrastructure-config
