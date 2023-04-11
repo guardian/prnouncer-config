@@ -21,6 +21,7 @@ jobs:
             actions-riff-raff
             amiable
             amigo
+            amiup
             anghammarad
             aws-account-setup
             aws-cost-management
@@ -38,8 +39,10 @@ jobs:
             elasticsearch-node-rotation
             github-audit
             grafana
+            gu-who
             instance-tag-discovery
             janus-app
+            master-to-main
             node-riffraff-artifact
             privatebin-docker
             private-infrastructure-config
