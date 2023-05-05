@@ -39,7 +39,6 @@ jobs:
             elasticsearch-node-rotation
             github-audit
             grafana
-            gu-who
             instance-tag-discovery
             janus-app
             master-to-main
