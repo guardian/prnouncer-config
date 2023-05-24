@@ -1,4 +1,4 @@
-name: "[Dotcom] Google Chats PR Announcer"
+name: "[Newsroom Resilience] Google Chats PR Announcer"
 
 on:
   workflow_dispatch:
