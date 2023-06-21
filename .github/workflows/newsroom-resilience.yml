@@ -16,8 +16,9 @@ jobs:
       - id: main
         run: |
           REPOS=(
-            newsroom-resilience-platform
             birthdays
+            image-syndication
+            newsroom-resilience-platform
             pressreader
           )
           
