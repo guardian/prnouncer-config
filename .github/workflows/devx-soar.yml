@@ -30,6 +30,7 @@ jobs:
             cfn-private-resource-types
             cloudformation-information
             cloudwatch-logs-management
+            cognito-auth-lambdas
             deploy-tools-platform
             devx-config
             devx-docs
