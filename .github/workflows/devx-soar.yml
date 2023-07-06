@@ -52,6 +52,7 @@ jobs:
             security-hq
             security-platform
             service-catalogue
+            simple-configuration
             snyk-tag-monitor
             ssm-scala
             ssm-to-env
