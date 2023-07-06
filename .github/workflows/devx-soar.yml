@@ -17,6 +17,7 @@ jobs:
         # See https://github.com/orgs/guardian/teams/developer-experience/repositories
         run: |
           REPOS=(
+            .github
             actions-read-private-repos
             actions-riff-raff
             amiable
