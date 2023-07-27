@@ -20,6 +20,7 @@ jobs:
             image-syndication
             newsroom-resilience-platform
             pressreader
+            exiftool-lambda-layer
           )
           
           RESULT=""
