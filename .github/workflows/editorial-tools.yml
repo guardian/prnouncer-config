@@ -56,7 +56,6 @@ jobs:
             remote-machines
             rights-feeder
             s3-upload
-            screenshort
             # story-packages # bot is failing to parse response from this repo
             tagmanager
             targeting
