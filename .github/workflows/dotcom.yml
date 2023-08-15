@@ -56,3 +56,4 @@ jobs:
           #   - https://github.com/apps/gu-scala-steward-public-repos
           github-ignored-users: 49699333,19733683,108136057
           github-ignored-labels: Stale,prnouncer-ignore
+          show-pr-age: "true"
