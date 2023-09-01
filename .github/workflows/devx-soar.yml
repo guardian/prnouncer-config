@@ -89,3 +89,5 @@ jobs:
 
           # By default, guardian/actions-prnouncer doesn't report PRs from Dependabot. Include them here.
           github-ignored-users: ''
+          
+          show-pr-age: 'true'
