@@ -21,6 +21,7 @@ jobs:
             newsroom-resilience-platform
             pressreader
             exiftool-lambda-layer
+            crosswordv2
           )
           
           RESULT=""
