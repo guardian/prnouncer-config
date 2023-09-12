@@ -40,13 +40,10 @@ jobs:
             grafana
             instance-tag-discovery
             janus-app
-            master-to-main
-            node-riffraff-artifact
             privatebin-docker
             private-infrastructure-config
             prism
             riff-raff
-            sbt-riffraff-artifact
             security-hq
             security-platform
             service-catalogue
@@ -55,8 +52,6 @@ jobs:
             snyk-tag-monitor
             ssm-scala
             ssm-to-env
-            toil
-            toil-records
             tracker
             waf
           )
