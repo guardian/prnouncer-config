@@ -21,13 +21,19 @@ jobs:
             apps-rendering-api-models
             bridget
             about-us
+            frontend-lambda
+            platform
+            fastly-edge-cache
+            fastly-image-service
+            skimlinks-lambda
+            dotcom-onion-platform
           )
-          
+
           RESULT=""
           for repo in "${REPOS[@]}"; do
             RESULT="$RESULT,guardian/$repo"
           done
-          
+
           # remove leading ,
           RESULT="${RESULT:1}"
           echo "repos=$RESULT" >> $GITHUB_OUTPUT
