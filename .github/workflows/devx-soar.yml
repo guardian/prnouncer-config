@@ -24,6 +24,7 @@ jobs:
             amigo
             anghammarad
             aws-account-setup
+            aws-backup
             aws-cost-management
             cdk
             cdk-playground
