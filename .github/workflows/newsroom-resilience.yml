@@ -22,13 +22,14 @@ jobs:
             pressreader
             exiftool-lambda-layer
             crosswordv2
+            remote-machines
           )
-          
+
           RESULT=""
           for repo in "${REPOS[@]}"; do
             RESULT="$RESULT,guardian/$repo"
           done
-          
+
           # remove leading ,
           RESULT="${RESULT:1}"
           echo "repos=$RESULT" >> $GITHUB_OUTPUT
