@@ -19,6 +19,7 @@ jobs:
         run: |
           REPOS=(
             .github
+            actions-prnouncer
             actions-read-private-repos
             actions-riff-raff
             amiable
