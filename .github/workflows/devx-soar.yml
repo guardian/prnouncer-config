@@ -33,6 +33,7 @@ jobs:
             cfn-private-resource-types
             cloudwatch-logs-management
             cognito-auth-lambdas
+            cq-source-galaxies
             deploy-tools-platform
             devx-config
             devx-docs
