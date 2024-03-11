@@ -29,7 +29,6 @@ jobs:
             service-catalogue
             snyk-tag-monitor
             ssm-scala
-            tracker
             waf
           )
 
