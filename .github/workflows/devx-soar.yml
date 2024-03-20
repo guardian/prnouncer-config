@@ -25,6 +25,7 @@ jobs:
             amiable
             amigo
             anghammarad
+            anghammarad-config
             aws-account-setup
             aws-backup
             aws-cost-management
