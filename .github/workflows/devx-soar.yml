@@ -3,9 +3,9 @@ name: "[DevX SOaR] Google Chats PR Announcer"
 on:
   workflow_dispatch:
   schedule:
-    # Every morning at 11AM UTC, Mondays to Fridays
+    # Every morning at 9:30AM UTC (10:30AM BST), Mondays to Fridays
     # See https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
-    - cron: "0 11 * * MON-FRI"
+    - cron: "30 9 * * MON-FRI"
 
 jobs:
   # See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-defining-outputs-for-a-job
