@@ -47,6 +47,7 @@ jobs:
             private-infrastructure-config
             prism
             riff-raff
+            riffraff-platform
             service-catalogue
             simple-configuration
             slo-alerts
