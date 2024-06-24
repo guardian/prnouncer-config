@@ -18,7 +18,6 @@ jobs:
           REPOS=(
             mobile-apps-api
             mobile-platform
-            mobile-apps-article-templates
             football-time-machine
             mobile-entry
             mobile-n10n
