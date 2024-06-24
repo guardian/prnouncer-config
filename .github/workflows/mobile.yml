@@ -31,6 +31,7 @@ jobs:
             mobile-content-events
             mobile-fastly-cache-purger
             myguardian-support-services
+            mobile-apps-api-models
           )
           
           RESULT=""
