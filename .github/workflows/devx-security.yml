@@ -24,11 +24,9 @@ jobs:
             bucket-blocker
             janus-app
             privatebin-docker
-            private-infrastructure-config
             security-hq
             security-platform
             service-catalogue
-            snyk-tag-monitor
             ssm-scala
             waf
           )
