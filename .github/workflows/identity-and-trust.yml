@@ -19,34 +19,31 @@ jobs:
         # SELECT short_repo_name FROM view_repo_ownership WHERE (github_team_name = 'Identity' OR github_team_name = 'Discussion' OR github_team_name = 'Transparency & Consent') AND NOT archived
         run: |
           REPOS=(
+            baton
+            baton-lambda-template
             cmp-market-research
             consent-management-platform
-            baton
-            transparency-consent-docs
-            baton-lambda-template
             discussion-api
+            discussion-avatar
+            discussion-elasticsearch
+            discussion-modtools
             discussion-platform
+            dynamo-db-switches
+            gatehouse
+            gateway
             grl
             hmac-headers
             identity
             identity-account-deletion
             identity-admin
-            salesforce-message-handler
-            hackday-gustodon-bot
             identity-admin-api
             identity-data-retention
             identity-platform
             identity-processes
             identity-test-users
-            baton
-            consent-management-platform
-            discussion-avatar
-            discussion-elasticsearch
-            discussion-modtools
-            dynamo-db-switches
-            gatehouse
-            gateway
+            salesforce-message-handler
             social-sign-in
+            transparency-consent-docs
           )
 
           RESULT=""
