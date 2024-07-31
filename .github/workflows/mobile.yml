@@ -27,7 +27,7 @@ jobs:
             mobile-save-for-later
             mobile-logstash-encoder
             live-app-versions
-            myguardian-prefs-api
+            personalised-app-experience
             mobile-content-events
             mobile-fastly-cache-purger
             myguardian-support-services
