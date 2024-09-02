@@ -3,8 +3,8 @@ name: "[Interviews] Google Chats PR Announcer"
 on:
   workflow_dispatch:
   schedule:
-    # Every morning at 9AM, Mondays to Fridays
-    - cron: "0 9 * * MON-FRI"
+    # Every Friday morning at 9AM
+    - cron: "0 9 * * FRI"
 
 jobs:
   prnouncer:
