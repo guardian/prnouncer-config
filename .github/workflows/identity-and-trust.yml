@@ -41,7 +41,6 @@ jobs:
             identity-platform
             identity-processes
             identity-test-users
-            salesforce-message-handler
             social-sign-in
             transparency-consent-docs
           )
