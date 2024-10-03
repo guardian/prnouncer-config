@@ -15,8 +15,7 @@ jobs:
       repos: ${{ steps.main.outputs.repos }}
     steps:
       - id: main
-        # See https://github.com/orgs/guardian/teams/devx-operations/repositories
-        # See https://github.com/orgs/guardian/teams/devx-reliability/repositories
+        # See https://github.com/orgs/guardian/teams/devx-reliability-and-ops/repositories
         # See https://github.com/orgs/guardian/teams/devx-security/repositories
         run: |
           REPOS=(
