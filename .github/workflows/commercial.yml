@@ -3,8 +3,8 @@ name: "[Commercial] Google Chats PR Announcer"
 on:
   workflow_dispatch:
   schedule:
-    # Every morning at 8AM, Mondays to Fridays
-    - cron: "0 8 * * MON-FRI"
+    # Every morning at 6AM, Mondays to Fridays
+    - cron: "0 6 * * MON-FRI"
 
 jobs:
   # See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-defining-outputs-for-a-job
@@ -61,6 +61,6 @@ jobs:
           #   - https://api.github.com/users/dependabot
           #   - https://api.github.com/users/snyk-bot
           #   - https://github.com/apps/gu-scala-steward-public-repos
-          github-ignored-users: 49699333,19733683,108136057
+          github-ignored-users: 49699333,19733683,108136057,3066534
           github-ignored-labels: Stale,prnouncer-ignore
           show-pr-age: "true"
