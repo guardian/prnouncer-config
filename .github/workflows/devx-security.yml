@@ -21,7 +21,8 @@ jobs:
             .github
             amiable
             aws-account-setup
-            bucket-blocker
+            fsbp-tools
+            cq-source-github-languages
             janus-app
             privatebin-docker
             security-hq
