@@ -29,8 +29,6 @@ jobs:
             anghammarad-config
             apps-anomaly-detection
             aws-account-setup
-            aws-backup
-            aws-cost-management
             cdk
             cdk-playground
             cfn-private-resource-types
