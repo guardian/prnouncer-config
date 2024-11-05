@@ -78,7 +78,7 @@ jobs:
           private-key: ${{ secrets.PRIVATE_KEY }}
           owner: guardian
 
-      - uses: guardian/actions-prnouncer@main
+      - uses: guardian/actions-prnouncer@aa/chat-rate-limit
         with:
           google-webhook-url: ${{ secrets.DEVX_GOOGLE_WEBHOOK_URL }}
           github-repositories: ${{ needs.setup.outputs.repos }}
