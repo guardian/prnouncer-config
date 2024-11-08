@@ -35,6 +35,7 @@ jobs:
             cloudwatch-logs-management
             cognito-auth-lambdas
             cq-source-galaxies
+            cq-source-ns1
             deploy-tools-platform
             devx-backup-monitoring
             devx-config
