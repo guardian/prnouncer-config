@@ -23,6 +23,10 @@ jobs:
             exiftool-lambda-layer
             crosswordv2
             remote-machines
+            grid
+            newswires
+            grid-feeds
+            editorial-wires
           )
 
           RESULT=""
