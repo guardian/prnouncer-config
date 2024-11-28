@@ -54,6 +54,7 @@ jobs:
             simple-configuration
             slo-alerts
             ssm-to-env
+            tracker
             waf
           )
 
