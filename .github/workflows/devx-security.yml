@@ -23,6 +23,7 @@ jobs:
             aws-account-setup
             fsbp-tools
             cq-source-github-languages
+            cq-source-image-packages
             janus-app
             privatebin-docker
             security-hq
