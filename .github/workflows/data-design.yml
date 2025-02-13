@@ -1,11 +1,11 @@
-name: "[DevX Security] Google Chats PR Announcer"
+name: "[Data Design] Google Chats PR Announcer"
 
 on:
   workflow_dispatch:
   schedule:
-    # Every morning at 9:30AM UTC, Mondays to Fridays
+    # Every Tuesday and Thusrday at 10:30AM UTC, Mondays to Fridays
     # See https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
-    - cron: "30 10 * * MON-FRI"
+    - cron: "30 10 * * TUE,THU"
 
 jobs:
   # See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-defining-outputs-for-a-job
