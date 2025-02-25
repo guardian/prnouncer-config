@@ -26,6 +26,8 @@ jobs:
             elements-manager
             google-admanager-api
             Prebid.js
+            ad-manager-tools
+            ad-manager-line-items-jobs
           )
 
           RESULT=""
