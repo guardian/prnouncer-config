@@ -53,8 +53,6 @@ jobs:
             service-catalogue
             simple-configuration
             slo-alerts
-            ssm-to-env
-            tracker
             waf
           )
 
