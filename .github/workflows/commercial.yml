@@ -27,7 +27,7 @@ jobs:
             google-admanager-api
             Prebid.js
             ad-manager-tools
-            ad-manager-line-items-jobs
+            line-item-jobs
           )
 
           RESULT=""
