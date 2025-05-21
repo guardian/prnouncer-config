@@ -32,6 +32,7 @@ jobs:
             mobile-fastly-cache-purger
             myguardian-support-services
             mobile-apps-api-models
+            mobile-google-chat-bots
           )
           
           RESULT=""
