@@ -16,7 +16,6 @@ jobs:
     steps:
       - id: main
         # See https://github.com/orgs/guardian/teams/devx-reliability-and-ops/repositories
-        # See https://github.com/orgs/guardian/teams/devx-security/repositories
         run: |
           REPOS=(
             .github
@@ -51,7 +50,6 @@ jobs:
             riff-raff
             riffraff-platform
             service-catalogue
-            simple-configuration
             slo-alerts
           )
 
