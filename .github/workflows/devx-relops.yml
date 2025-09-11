@@ -45,7 +45,6 @@ jobs:
             elasticsearch-node-rotation
             grafana
             instance-tag-discovery
-            private-infrastructure-config
             prism
             riff-raff
             riffraff-platform
