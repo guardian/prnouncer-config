@@ -16,18 +16,15 @@ jobs:
       - id: main
         run: |
           REPOS=(
+            ad-manager-tools
             commercial
             commercial-canaries
-            commercial-playground
+            commercial-lambdas
             commercial-request-parser
             commercial-shared
             commercial-templates
             commercial-tools
-            elements-manager
             google-admanager-api
-            Prebid.js
-            ad-manager-tools
-            line-item-jobs
           )
 
           RESULT=""
