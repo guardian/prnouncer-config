@@ -27,6 +27,16 @@ jobs:
             newswires
             grid-feeds
             editorial-wires
+            media-atom-maker
+            editorial-ftp
+            sftp-user-manager
+            grid-cerebro
+            kcl-pekko-stream
+            newsbuilder
+            newsroom-resilience-scripts
+            rcs-poller-lambda
+            s3-upload
+            tlib-loaders
           )
 
           RESULT=""
