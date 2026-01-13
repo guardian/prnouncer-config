@@ -1,4 +1,4 @@
-name: "[Newsroom Resilience] Google Chats PR Announcer"
+name: "[Media & Feeds] Google Chats PR Announcer"
 
 on:
   workflow_dispatch:
@@ -17,16 +17,26 @@ jobs:
         run: |
           REPOS=(
             birthdays
-            image-syndication
-            newsroom-resilience-platform
-            pressreader
-            exiftool-lambda-layer
             crosswordv2
-            remote-machines
-            grid
-            newswires
-            grid-feeds
+            editorial-ftp
             editorial-wires
+            exiftool-lambda-layer
+            grid
+            grid-cerebro
+            grid-feeds
+            image-syndication
+            kcl-pekko-stream
+            media-atom-maker
+            newsbuilder
+            newsroom-resilience-platform
+            newsroom-resilience-scripts
+            newswires
+            pressreader
+            rcs-poller-lambda
+            remote-machines
+            s3-upload
+            sftp-user-manager
+            tlib-loaders
           )
 
           RESULT=""
