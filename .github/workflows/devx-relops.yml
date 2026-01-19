@@ -38,7 +38,6 @@ jobs:
             deploy-tools-platform
             devx-backup-monitoring
             devx-config
-            devx-docs
             devx-logs
             dns-validation-lambda
             elastic-search-monitor
