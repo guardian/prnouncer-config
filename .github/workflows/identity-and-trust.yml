@@ -21,7 +21,6 @@ jobs:
           REPOS=(
             baton
             baton-lambda-template
-            cmp-market-research
             consent-management-platform
             discussion-api
             discussion-avatar
