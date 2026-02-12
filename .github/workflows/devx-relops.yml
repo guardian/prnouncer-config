@@ -95,4 +95,7 @@ jobs:
           # Only include PRs from Dependabot (49699333), Scala Steward public (108136057), and Scala Steward private (108460179)
           github-announced-users: "49699333,108136057,108460179"
 
+          # Override default which ignores Dependabot
+          github-ignored-users: ""
+
           show-pr-age: "true"
