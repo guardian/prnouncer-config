@@ -5,8 +5,7 @@ on:
   schedule:
     # Every morning at 9:30AM UTC (10:30AM BST)
     # See https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
-    - cron: "30 9 * * MON"      # Monday - announce runs both non-dependency and dependency PRs
-    - cron: "30 9 * * TUE-FRI"  # Tue-Fri - announce only non-dependency announcements
+    - cron: "30 9 * * MON-FRI"
 
 jobs:
   # See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-defining-outputs-for-a-job
@@ -86,9 +85,13 @@ jobs:
 
           show-pr-age: "true"
 
+      - name: Get current day
+        # We use %a for 'Mon', 'Tue', etc.
+        run: echo "CURRENT_DAY=$(date +'%a')" >> $GITHUB_ENV
+
       - name: Announce dependency update PRs
         # Only run on Mondays to avoid daily noise from dependency bots (or on manual execution)
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '30 9 * * MON'
+        if: github.event_name == 'workflow_dispatch' || env.CURRENT_DAY == 'Mon'
         uses: guardian/actions-prnouncer@main
         with:
           google-webhook-url: ${{ secrets.DEVX_GOOGLE_WEBHOOK_URL }}
