@@ -55,5 +55,5 @@ jobs:
           # We only want members of DD team. We can look at automating this in future.
           # github-announced-users: "75612679,91878054,118352929,66588171,43630793,8862634"
           github-announced-team: "data-design"
-
+          github-allow-approved: true
           show-pr-age: "true"
