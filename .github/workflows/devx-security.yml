@@ -21,6 +21,7 @@ jobs:
             .github
             amiable
             aws-account-setup
+            devenv
             fsbp-tools
             cq-source-github-languages
             cq-source-image-packages
