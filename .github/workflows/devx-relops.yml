@@ -22,6 +22,7 @@ jobs:
             actions-prnouncer
             actions-read-private-repos
             actions-riff-raff
+            actions-static-site
             amiable
             amigo
             anghammarad
