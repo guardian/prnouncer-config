@@ -91,8 +91,8 @@ jobs:
         run: echo "CURRENT_DAY=$(date +'%a')" >> $GITHUB_ENV
 
       - name: Announce dependency update PRs
-        # Only run on Mondays to avoid daily noise from dependency bots (or on manual execution)
-        if: github.event_name == 'workflow_dispatch' || env.CURRENT_DAY == 'Mon'
+        # Run on Mondays and Wednesdays to avoid too much noise from dependency bots (or on manual execution)
+        if: github.event_name == 'workflow_dispatch' || env.CURRENT_DAY == 'Mon' || env.CURRENT_DAY == 'Wed'
         uses: guardian/actions-prnouncer@main
         with:
           google-webhook-url: ${{ secrets.DEVX_GOOGLE_WEBHOOK_URL }}
