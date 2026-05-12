@@ -3,9 +3,10 @@ name: "[DevX Security] Google Chats PR Announcer"
 on:
   workflow_dispatch:
   schedule:
-    # Every morning at 7 AM UTC, Mondays to Fridays
+    # Every weekday morning at 7 AM
     # See https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
     - cron: "0 7 * * MON-FRI"
+      timezone: "Europe/London"
 
 jobs:
   # See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-defining-outputs-for-a-job
