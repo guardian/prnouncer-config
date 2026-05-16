@@ -3,6 +3,8 @@ name: "[Media & Feeds] Google Chats PR Announcer"
 on:
   workflow_dispatch:
   schedule:
+    # Every morning at 9AM Mondays
+    - cron: "0 9 * * 1"
      # Every morning at 9AM Thursdays
     - cron: "0 9 * * 4"
 
@@ -62,6 +64,7 @@ jobs:
           owner: guardian
 
       - name: 'Human PRs'
+        if: github.event.schedule == '0 9 * * 1'
         uses: guardian/actions-prnouncer@main
         with:
           google-webhook-url: ${{ secrets.NEWSREL_GOOGLE_WEBHOOK_URL }}
@@ -77,6 +80,7 @@ jobs:
           github-ignored-labels: Stale,prnouncer-ignore
 
       - name: 'Bot PRs'
+        if: github.event.schedule == '0 9 * * 4'
         uses: guardian/actions-prnouncer@main
         with:
           google-webhook-url: ${{ secrets.NEWSREL_GOOGLE_WEBHOOK_URL }}
