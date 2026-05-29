@@ -30,6 +30,7 @@ jobs:
             privatebin-docker
             security-hq
             security-platform
+            security-recommendations
             service-catalogue
             ssm-scala
             waf
