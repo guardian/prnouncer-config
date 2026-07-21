@@ -19,7 +19,6 @@ jobs:
             birthdays
             crosswordv2
             editorial-ftp
-            editorial-wires
             exiftool-lambda-layer
             grid
             grid-cerebro
